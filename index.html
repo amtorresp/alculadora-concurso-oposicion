@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Concurso-Oposición</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .title {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #eef;
+            border: 1px solid #aac;
+            border-radius: 4px;
+            font-size: 18px;
+            text-align: center;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Calculadora Concurso-Oposición</div>
+        
+        <!-- Examen -->
+        <div class="input-group">
+            <label for="correctas">Preguntas Correctas:</label>
+            <input id="correctas" type="number" placeholder="0" />
+        </div>
+        <div class="input-group">
+            <label for="incorrectas">Preguntas Incorrectas:</label>
+            <input id="incorrectas" type="number" placeholder="0" />
+        </div>
+        <div class="input-group">
+            <label for="blanco">Preguntas en Blanco:</label>
+            <input id="blanco" type="number" placeholder="0" />
+        </div>
+        <button onclick="calcular()">Calcular Nota Final</button>
+        
+        <!-- Resultado -->
+        <div class="result" id="resultado"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
